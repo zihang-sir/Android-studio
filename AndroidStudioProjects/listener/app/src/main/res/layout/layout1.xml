@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bn1"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="普通"
+            android:onClick="click"/>
+        <Button
+            android:id="@+id/bn2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="单选"/>
+        <Button
+            android:id="@+id/bn3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="多选"/>
+        <Button
+            android:id="@+id/bn4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="进度条"/>
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#EFD80B"
+        android:textSize="40sp"
+        android:text="" />
+
+
+
+</LinearLayout>

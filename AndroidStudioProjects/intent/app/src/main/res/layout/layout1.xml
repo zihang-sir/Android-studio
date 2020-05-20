@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/internet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开指定网页"
+        />
+    <Button
+        android:id="@+id/btn_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开拨号面板" />
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拨打指定号码" />
+    <Button
+        android:id="@+id/btn_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开短信界面" />
+    <Button
+        android:id="@+id/send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="给指定的人发短信" />
+    <Button
+        android:id="@+id/btn_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="播放指定路径音乐" />
+    <Button
+        android:id="@+id/uninstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="卸载程序" />
+    <Button
+        android:id="@+id/install"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="安装程序" />
+    <Button
+        android:id="@+id/action_install"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过指定的action安装程序" />
+
+</LinearLayout>

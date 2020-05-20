@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather">
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="44dp"
+        android:text="上海"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/city"
+        android:layout_alignStart="@id/btn"
+        android:layout_alignLeft="@id/btn"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="42dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/imageView"
+        android:layout_below="@id/imageView"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="多云"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignTop="@id/imageView"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@id/imageView"
+        android:layout_toRightOf="@id/imageView"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-7C"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/wind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="风力：3级"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/pm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pm"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京" />
+
+        <Button
+            android:id="@+id/sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海" />
+
+        <Button
+            android:id="@+id/gz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广州" />
+    </LinearLayout>
+
+</RelativeLayout>
